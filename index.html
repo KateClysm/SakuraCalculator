@@ -8,62 +8,67 @@
     <title>Sakura Calculator</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="back">
-        <div class="calculator">
-            <!-- <img src="/resources/fondo2.png" alt="" class="fondo2"> -->
-            <div type="text" class="display" disabled>
-                <div class="operacion1">
-                    operaciones anteriores
-                </div>
-                <div class="operacion2">
-                    operación actual
-                </div>
-            </div>
-    
-            <div class="container-col">
-                <!-- <img src="/resources/sakura.png" alt="sakura flower" class="sakuraFlower">
-                <img src="/resources/branch7.png" alt="sakura branch" class="sakuraBranch">
-                <img src="/resources/sakuratree.png" alt="sakura tree" class="sakuraTree"> -->
-                <div class="row">
-                    <col><button class="operator" value="AC">AC</button></col>
-                    <col><button class="operator" value="DEL">DEL</button></col>
-                    <col><button class="operator" value="()">()</button></col>
-                    <col><button class="operator" value="/">/</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="1">1</button></col>
-                    <col><button value="2">2</button></col>
-                    <col><button value="3">3</button></col>
-                    <col><button class="operator" value="*">x</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="4">4</button></col>
-                    <col><button value="5">5</button></col>
-                    <col><button value="6">6</button></col>
-                    <col><button class="operator" value="+">+</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="7">7</button></col>
-                    <col><button value="8">8</button></col>
-                    <col><button value="9">9</button></col>
-                    <col><button class="operator" value="-">-</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button class="button1" value="0">0</button></col>
-                    <col><button class="button2" value=",">,</button></col>
-                    <col><button class="operator button3" value="=">=</button></col>
-                </div>
-            </div>
+     <!--CONTIENE EL ÁRBOL Y LA CALCULADORA-->
+     <div class="general-container">
+        
+        <!--ÁRBOL-->
+        <div class="itemTree">
+            <img src="/resources/sakuratree.png" alt="" class="tree">
         </div>
+        
+        <!--CALCULADORA-->
+        <div class="grid-container">
+
+            <!--VISUALIZADORES-->
+            <div class="grid-item itemVisAnt">visualizador ant</div>
+            <div class="grid-item itemVisAct">vis act</div>
+
+            <!--RAMA-->
+            <div class="grid-item itemBranch">
+                <img src="/resources/branch4.png" alt="" class="branch">
+            </div>
+
+            <!--ÁREA DE OPERADORES Y NÚMEROS-->
+            <div class="grid-item button">ac</div>
+            <div class="grid-item button">del</div>
+            <div class="grid-item button">%</div>
+            <div class="grid-item button">/</div>
+            <div class="grid-item button">1</div>
+            <div class="grid-item button">2</div>
+            <div class="grid-item button">3</div>
+            <div class="grid-item button">x</div>
+            <div class="grid-item button">4</div>
+            <div class="grid-item button">5</div>
+            <div class="grid-item button">6</div>
+            <div class="grid-item button">-</div>
+            <div class="grid-item button">7</div>
+            <div class="grid-item button">8</div>
+            <div class="grid-item button">9</div>
+            <div class="grid-item button">+</div>
+
+            <!--FLOR-->
+            <div class="grid-item itemSakura">
+                <img src="/resources/sakura2.png" alt="" class="sakura">
+            </div>
+
+            <!--ÁREA DE OPERADORES Y NÚMEROS-->
+            <div class="grid-item button">0</div>
+            <div class="grid-item button">,</div>
+            <div class="grid-item button">=</div>
+        </div>
+
     </div>
     
-
+    <!--JAVASCRIPT-->
     <script src="script.js"></script>
 </body>
+
 </html>
