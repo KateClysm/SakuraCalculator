@@ -1,12 +1,9 @@
 /*variables*/
 :root {
-    --marronOscuro: #d6948c;
-    --marronClaro: #e8b5b1;
     --rosaFuerte: #b8071f;
     --rosaMedio: #fa8d9f;
-    --rosaBajo: #ffdbe0;
     --rosaPalido: #fff5f5;
-    --calidBg: #994949;
+    --calidBg: #bd5e5e;
     --oldPink: #f8b7c2;
   }
 
@@ -23,13 +20,16 @@ body{
     width: 100vw;
     height: 100vh;
     font-family: 'Milonga', cursive;
-    background-color: var(--calidBg);
+    background: linear-gradient(rgba(202, 19, 74, 0.514), rgba(202, 19, 74, 0.185)), url(resources/32947080_detailed_hand_painted_pink_watercolour_background_0509.jpg);
     display: flex;
     justify-content: center;
     align-items: center; 
 }
 
 /*GENERAL CONTAINER    contiene al árbol y a la calculadora*/
+/* .general-container{
+   
+} */
 .itemTree {
     margin:0;
     padding: 0;
@@ -38,6 +38,8 @@ body{
     background: url(resources/animationBefore.png);
     background-size: contain;
     margin-bottom: -5px;
+   
+    
 }
 .itemTree:hover{
     background: url(resources/animationTree.png);
@@ -46,14 +48,16 @@ body{
 
 /* ÁREA DE LA CALCULADORA*/
 .grid-container {
+    border-top: 3px solid var(--rosaMedio);
     display: grid;
     grid-template-columns: auto auto auto auto;
     padding: 10px;
     margin: 0;
     gap:5px;
     width: 280px;
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: var(--rosaPalido);
+    box-shadow: 0px 10px 10px 8px #e75069;;
 }
 
 /*ITEMS*/
@@ -127,21 +131,25 @@ body{
 
 /*VISUALIZADORES*/
 .previous-operand, .current-operand{
+    
     padding: 15px 10px;
     border-radius: 10px;
-    background-color: var(--rosaBajo);
     justify-content: start;
-    align-self: center;
+    align-self: flex-end;
     color: var(--rosaFuerte);
     font-size: 1.4rem;
-    word-wrap:break-word;
     word-break: break-all;
+    overflow-wrap: break-word;
 }
 .previous-operand {
     grid-column-start: 1;
     grid-column-end: 5;
+    padding-top: 30px;
+    height: 20px;
 }
 .current-operand {
     grid-column-start: 1;
     grid-column-end: 3;
+    padding-bottom: 40px;
+    height: 80px;
 }
