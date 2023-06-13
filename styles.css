@@ -3,7 +3,7 @@
     --marronOscuro: #d6948c;
     --marronClaro: #e8b5b1;
     --rosaFuerte: #b8071f;
-    --rosaMedio: #ffb5c0;
+    --rosaMedio: #fa8d9f;
     --rosaBajo: #ffdbe0;
     --rosaPalido: #fff5f5;
     --calidBg: #994949;
@@ -26,16 +26,22 @@ body{
     background-color: var(--calidBg);
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
 }
 
 /*GENERAL CONTAINER    contiene al árbol y a la calculadora*/
 .itemTree {
-    display: flex;
-    justify-content: center;
+    margin:0;
+    padding: 0;
+    width: 280px;
+    height: 120px;
+    background: url(resources/animationBefore.png);
+    background-size: contain;
+    margin-bottom: -5px;
 }
-.tree{
-    width: 100px;
+.itemTree:hover{
+    background: url(resources/animationTree.png);
+    background-size: contain;    
 }
 
 /* ÁREA DE LA CALCULADORA*/
@@ -74,7 +80,7 @@ body{
     justify-self: center;
 }
 .button:hover{
-    background-color: var(--rosaFuerte);
+    background-color: var(--rosaMedio);
     transition: 0.3s;
 }
 
@@ -88,7 +94,8 @@ body{
     transform: rotate(-22deg);
 }
 .sakura:hover{
-    transform: rotate(-100deg);
+    transform: rotate(-150deg);
+    transition: 1s;
 }
 .sakura{
     width: 80px;
@@ -99,20 +106,27 @@ body{
 /*RAMA*/
 .itemBranch {
     display: flex;
-    justify-content: end;
+    justify-self: end;
     padding: 0;
-    margin: 0;
     grid-column-start: 3;
     grid-column-end: 5;
-}
-.branch{
     width: 80px;
+    height: 85px;
     transform:  scaleX(-1);
     margin-right: -10px;
+    background: url(resources/branch4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.itemBranch:hover{
+    background: url(resources/branch2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
 }
 
 /*VISUALIZADORES*/
-.itemVisAct, .itemVisAnt{
+.previous-operand, .current-operand{
     padding: 15px 10px;
     border-radius: 10px;
     background-color: var(--rosaBajo);
@@ -120,14 +134,14 @@ body{
     align-self: center;
     color: var(--rosaFuerte);
     font-size: 1.4rem;
+    word-wrap:break-word;
+    word-break: break-all;
 }
-.itemVisAnt {
+.previous-operand {
     grid-column-start: 1;
     grid-column-end: 5;
 }
-.itemVisAct {
+.current-operand {
     grid-column-start: 1;
     grid-column-end: 3;
 }
-
-
