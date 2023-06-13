@@ -130,3 +130,7 @@ deleteButton.addEventListener('click', button => {
   calculator.delete()
   calculator.updateDisplay()
 })
+
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}

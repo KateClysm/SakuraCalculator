@@ -13,22 +13,25 @@
     box-sizing: border-box;
     outline: 0;
     transition: all 0.5s ease;
-    cursor: url(/resources/cursor2.png), auto;
 }
 
 body{
+    background: linear-gradient(rgba(202, 19, 74, 0.514), rgba(202, 19, 74, 0.185)), url(resources/32947080_detailed_hand_painted_pink_watercolour_background_0509.jpg);
     width: 100vw;
     height: 100vh;
     font-family: 'Milonga', cursive;
-    background: linear-gradient(rgba(202, 19, 74, 0.514), rgba(202, 19, 74, 0.185)), url(resources/32947080_detailed_hand_painted_pink_watercolour_background_0509.jpg);
+}
+.container{
+    width: 100vw;
+    height: 95vh;
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center; 
 }
 
 /*GENERAL CONTAINER    contiene al árbol y a la calculadora*/
 /* .general-container{
-   
+    justify-self: flex-end;
 } */
 .itemTree {
     margin:0;
@@ -86,6 +89,7 @@ body{
 .button:hover{
     background-color: var(--rosaMedio);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 /*FLOR*/
@@ -152,4 +156,91 @@ body{
     grid-column-end: 3;
     padding-bottom: 40px;
     height: 80px;
+}
+
+.div-rights{
+    color:var(--rosaPalido);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    margin-bottom: -100px;
+    padding: 10px;
+}
+
+.rights, .credits{
+    text-decoration: none;
+    color: var(--rosaPalido);
+}
+.rights:hover, .credits:hover, .img-rights:hover{
+   cursor:pointer;
+}
+
+.img-rights{
+    height: 25px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.credits{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border: none;
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display:none;
+}
+
+.popup .content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: var(--rosaPalido);
+    width: 450px;
+    height: 300px;
+    z-index:2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn{
+    cursor:pointer;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background: var(--rosaMedio);
+    color:var(--rosaPalido);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    margin:auto;
+}
+
+.popup.active .overlay{
+    display:block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.title-credits{
+    padding-bottom: 10px;
 }

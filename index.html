@@ -9,6 +9,9 @@
 
     <link rel="stylesheet" href="styles.css">
 
+    <!--ÍCONO-->
+    <link rel="icon" type="icon" href="/resources/sakura2.png">
+
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,53 +19,100 @@
 </head>
 
 <body>
-     <!--CONTIENE EL ÁRBOL Y LA CALCULADORA-->
-     <div class="general-container">
-        
-        <!--ÁRBOL-->
-        <div class="itemTree"></div>
-        
-        <!--CALCULADORA-->
-        <div class="grid-container">
+    <div class="container">
+            <!--CONTIENE EL ÁRBOL Y LA CALCULADORA-->
+        <div class="general-container">
+            
+            <!--ÁRBOL-->
+            <div class="itemTree"></div>
+            
+            <!--CALCULADORA-->
+            <div class="grid-container">
 
-            <!--VISUALIZADORES-->
-            <div class="grid-item previous-operand"  data-previous-operand  ></div>
-            <div class="grid-item current-operand"  data-current-operand  ></div>
+                <!--VISUALIZADORES-->
+                <div class="grid-item previous-operand"  data-previous-operand  ></div>
+                <div class="grid-item current-operand"  data-current-operand  ></div>
 
-            <!--RAMA-->
-            <div class="grid-item itemBranch"></div>
+                <!--RAMA-->
+                <div class="grid-item itemBranch"></div>
 
-            <!--ÁREA DE OPERADORES Y NÚMEROS-->
-            <div class="grid-item button"  data-all-clear  >ac</div>
-            <div class="grid-item button"  data-delete  >del</div>
-            <div class="grid-item button " data-operation  >%</div>
-            <div class="grid-item button " data-operation  >/</div>
-            <div class="grid-item button " data-number  >1</div>
-            <div class="grid-item button " data-number  >2</div>
-            <div class="grid-item button " data-number  >3</div>
-            <div class="grid-item button " data-operation  >x</div>
-            <div class="grid-item button " data-number  >4</div>
-            <div class="grid-item button " data-number  >5</div>
-            <div class="grid-item button " data-number  >6</div>
-            <div class="grid-item button " data-operation  >-</div>
-            <div class="grid-item button " data-number  >7</div>
-            <div class="grid-item button " data-number  >8</div>
-            <div class="grid-item button " data-number  >9</div>
-            <div class="grid-item button " data-operation  >+</div>
+                <!--ÁREA DE OPERADORES Y NÚMEROS-->
+                <div class="grid-item button"  data-all-clear  >ac</div>
+                <div class="grid-item button"  data-delete  >del</div>
+                <div class="grid-item button " data-operation  >%</div>
+                <div class="grid-item button " data-operation  >/</div>
+                <div class="grid-item button " data-number  >1</div>
+                <div class="grid-item button " data-number  >2</div>
+                <div class="grid-item button " data-number  >3</div>
+                <div class="grid-item button " data-operation  >x</div>
+                <div class="grid-item button " data-number  >4</div>
+                <div class="grid-item button " data-number  >5</div>
+                <div class="grid-item button " data-number  >6</div>
+                <div class="grid-item button " data-operation  >-</div>
+                <div class="grid-item button " data-number  >7</div>
+                <div class="grid-item button " data-number  >8</div>
+                <div class="grid-item button " data-number  >9</div>
+                <div class="grid-item button " data-operation  >+</div>
 
-            <!--FLOR-->
-            <div class="grid-item itemSakura">
-                <img src="/resources/sakura2.png" alt="" class="sakura">
+                <!--FLOR-->
+                <div class="grid-item itemSakura">
+                    <img src="/resources/sakura2.png" alt="" class="sakura">
+                </div>
+
+                <!--ÁREA DE OPERADORES Y NÚMEROS-->
+                <div class="grid-item button " data-number  >0</div>
+                <div class="grid-item button"  data-number  >,</div>
+                <div class="grid-item button"  data-equals  >=</div>
             </div>
 
-            <!--ÁREA DE OPERADORES Y NÚMEROS-->
-            <div class="grid-item button " data-number  >0</div>
-            <div class="grid-item button"  data-number  >,</div>
-            <div class="grid-item button"  data-equals  >=</div>
         </div>
-
+        
+        <div class="div-rights">
+            © All Rights Reserved by 
+            <a class="rights" href="https://github.com/KateClysm"  target="_blank"> 
+                <img class="img-rights" src="resources/social.png" href="https://github.com/KateClysm"  target="_blank" alt="github"> KateClysm 
+            </a>
+        </div>
     </div>
+     
+
+   
     
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1 class="title-credits">Credits</h1>
+            <div>
+                <p>sakura tree on top</p>
+                <a href="https://www.flaticon.es/iconos-gratis/primavera" title="primavera iconos">Primavera iconos creados por Freepik - Flaticon</a>
+            </div>
+            
+            <div>
+                <p> sakura flower and petals</p>
+                <a href="https://www.flaticon.es/iconos-gratis/flor" target="_blank" title="flor iconos">Flor iconos creados por Vitaly Gorbachev - Flaticon</a>
+            </div>
+
+            <div>
+                <p> sakura branch</p>
+                <a href="https://www.flaticon.com/free-icons/cherry-blossom" target="_blank" title="cherry blossom icons">Cherry blossom icons created by Freepik - Flaticon</a>
+            </div>
+            
+            <div>
+                <p>background</p>
+                <a href="https://www.freepik.es/vector-gratis/fondo-acuarela-rosa-pintado-mano-detallado_32947080.htm#query=pink&position=0&from_view=search&track=sph"target="_blank" >Imagen de kjpargeter</a> en Freepik
+            </div>
+            
+            <div>
+                <p>github icon</p>
+                <a href="https://www.flaticon.com/free-icons/github" target="_blank" title="github icons">Github icons created by Alfredo Creates - Flaticon</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="credits" onclick="togglePopup()">Show Credits</div>
+
     <!--JAVASCRIPT-->
     <script src="script.js"></script>
 </body>
