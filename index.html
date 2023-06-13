@@ -8,58 +8,63 @@
     <title>Sakura Calculator</title>
 
     <link rel="stylesheet" href="styles.css">
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Milonga&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <div class="back">
-        <div class="calculator">
-            <div type="text" class="display" disabled>
-                <div class="operacion1">
-                    operaciones anteriores
-                </div>
-                <div class="operacion2">
-                    operación actual
-                </div>
+     <!--CONTIENE EL ÁRBOL Y LA CALCULADORA-->
+     <div class="general-container">
+        
+        <!--ÁRBOL-->
+        <div class="itemTree"></div>
+        
+        <!--CALCULADORA-->
+        <div class="grid-container">
+
+            <!--VISUALIZADORES-->
+            <div class="grid-item previous-operand"  data-previous-operand  ></div>
+            <div class="grid-item current-operand"  data-current-operand  ></div>
+
+            <!--RAMA-->
+            <div class="grid-item itemBranch"></div>
+
+            <!--ÁREA DE OPERADORES Y NÚMEROS-->
+            <div class="grid-item button"  data-all-clear  >ac</div>
+            <div class="grid-item button"  data-delete  >del</div>
+            <div class="grid-item button " data-operation  >%</div>
+            <div class="grid-item button " data-operation  >/</div>
+            <div class="grid-item button " data-number  >1</div>
+            <div class="grid-item button " data-number  >2</div>
+            <div class="grid-item button " data-number  >3</div>
+            <div class="grid-item button " data-operation  >x</div>
+            <div class="grid-item button " data-number  >4</div>
+            <div class="grid-item button " data-number  >5</div>
+            <div class="grid-item button " data-number  >6</div>
+            <div class="grid-item button " data-operation  >-</div>
+            <div class="grid-item button " data-number  >7</div>
+            <div class="grid-item button " data-number  >8</div>
+            <div class="grid-item button " data-number  >9</div>
+            <div class="grid-item button " data-operation  >+</div>
+
+            <!--FLOR-->
+            <div class="grid-item itemSakura">
+                <img src="/resources/sakura2.png" alt="" class="sakura">
             </div>
-    
-            <div class="container-col">
-                <div class="row">
-                    <col><button class="operator" value="AC">AC</button></col>
-                    <col><button class="operator" value="DEL">DEL</button></col>
-                    <col><button class="operator" value="()">()</button></col>
-                    <col><button class="operator" value="/">/</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="1">1</button></col>
-                    <col><button value="2">2</button></col>
-                    <col><button value="3">3</button></col>
-                    <col><button class="operator" value="*">x</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="4">4</button></col>
-                    <col><button value="5">5</button></col>
-                    <col><button value="6">6</button></col>
-                    <col><button class="operator" value="+">+</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button value="7">7</button></col>
-                    <col><button value="8">8</button></col>
-                    <col><button value="9">9</button></col>
-                    <col><button class="operator" value="-">-</button></col>
-                </div>
-    
-                <div class="row">
-                    <col><button class="button1" value="0">0</button></col>
-                    <col><button class="button2" value=",">,</button></col>
-                    <col><button class="operator button3" value="=">=</button></col>
-                </div>
-            </div>
+
+            <!--ÁREA DE OPERADORES Y NÚMEROS-->
+            <div class="grid-item button " data-number  >0</div>
+            <div class="grid-item button"  data-number  >,</div>
+            <div class="grid-item button"  data-equals  >=</div>
         </div>
+
     </div>
     
-
+    <!--JAVASCRIPT-->
     <script src="script.js"></script>
 </body>
+
 </html>
