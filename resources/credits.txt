@@ -13,5 +13,5 @@ sakura branch
 background
 <a href="https://www.freepik.es/vector-gratis/fondo-acuarela-rosa-pintado-mano-detallado_32947080.htm#query=pink&position=0&from_view=search&track=sph">Imagen de kjpargeter</a> en Freepik
 
-github icon
-<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by Alfredo Creates - Flaticon</a>
+linkedIn icon
+<a href="https://www.flaticon.com/free-icons/linked" title="linked icons">Linked icons created by Alfredo Creates - Flaticon</a>

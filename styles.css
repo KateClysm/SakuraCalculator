@@ -1,9 +1,9 @@
 /*variables*/
 :root {
     --rosaFuerte: #b8071f;
+    --rosaOscuro: #e65f75;
     --rosaMedio: #fa8d9f;
     --rosaPalido: #fff5f5;
-    --calidBg: #bd5e5e;
     --oldPink: #f8b7c2;
   }
 
@@ -85,6 +85,7 @@ body{
     background-color: var(--oldPink);
     color:var(--rosaPalido);
     justify-self: center;
+    box-shadow: 0px 2px 3px var(--rosaOscuro);
 }
 .button:hover{
     background-color: var(--rosaMedio);
