@@ -26,43 +26,49 @@
             <!--ÁRBOL-->
             <div class="itemTree"></div>
             
+            <!--VISUALIZADOR-->
+            <div class="pantallas">
+                <div class="pantalla1">
+                    <div class="display-1">0</div>
+                </div>
+                <div class="pantalla2">
+                    <div class="display-2">0</div>
+                </div>
+                
+                <div class="anterior"> ant: 
+                    <div class="temp-result"></div>
+                </div>
+                
+            </div>
             <!--CALCULADORA-->
             <div class="grid-container">
-
-                <!--VISUALIZADORES-->
-                <div class="grid-item previous-operand"  data-previous-operand  ></div>
-                <div class="grid-item current-operand"  data-current-operand  ></div>
-
-                <!--RAMA-->
-                <div class="grid-item itemBranch"></div>
-
                 <!--ÁREA DE OPERADORES Y NÚMEROS-->
-                <div class="grid-item button"  data-all-clear  >ac</div>
-                <div class="grid-item button"  data-delete  >del</div>
-                <div class="grid-item button " data-operation  >%</div>
-                <div class="grid-item button " data-operation  >/</div>
-                <div class="grid-item button " data-number  >1</div>
-                <div class="grid-item button " data-number  >2</div>
-                <div class="grid-item button " data-number  >3</div>
-                <div class="grid-item button " data-operation  >x</div>
-                <div class="grid-item button " data-number  >4</div>
-                <div class="grid-item button " data-number  >5</div>
-                <div class="grid-item button " data-number  >6</div>
-                <div class="grid-item button " data-operation  >-</div>
-                <div class="grid-item button " data-number  >7</div>
-                <div class="grid-item button " data-number  >8</div>
-                <div class="grid-item button " data-number  >9</div>
-                <div class="grid-item button " data-operation  >+</div>
+                <div class="grid-item ac button all-clear" >AC</div>
+                <div class="grid-item button last-entity-clear" >&larr;</div>
+                <div class="grid-item button operation">%</div>
+                <div class="grid-item button operation">/</div>
+                <div class="grid-item button number">1</div>
+                <div class="grid-item button number">2</div>
+                <div class="grid-item button number">3</div>
+                <div class="grid-item button operation">x</div>
+                <div class="grid-item button number">4</div>
+                <div class="grid-item button number">5</div>
+                <div class="grid-item button number">6</div>
+                <div class="grid-item button operation">-</div>
+                <div class="grid-item button number">7</div>
+                <div class="grid-item button number">8</div>
+                <div class="grid-item button number">9</div>
+                <div class="grid-item button operation">+</div>
 
                 <!--FLOR-->
-                <div class="grid-item itemSakura">
+                <div class="itemSakura">
                     <img src="/resources/sakura2.png" alt="" class="sakura">
                 </div>
 
                 <!--ÁREA DE OPERADORES Y NÚMEROS-->
-                <div class="grid-item button " data-number  >0</div>
-                <div class="grid-item button"  data-number  >,</div>
-                <div class="grid-item button"  data-equals  >=</div>
+                <div class="grid-item button btn-0 number">0</div>
+                <div class="grid-item button number dot">.</div>
+                <div class="grid-item button equal">=</div>
             </div>
 
         </div>
@@ -70,7 +76,7 @@
         <div class="div-rights">
             © All Rights Reserved by 
             <a class="rights" href="https://www.linkedin.com/in/maria-monchot/"  target="_blank"> 
-                <img class="img-rights" src="resources/social.png" href="https://www.linkedin.com/in/maria-monchot/"  target="_blank" alt="github"> KateClysm 
+                <img class="img-rights" src="resources/linked.png" href="https://www.linkedin.com/in/maria-monchot/"  target="_blank" alt="linkedIn"> KateClysm 
             </a>
         </div>
     </div>
@@ -114,8 +120,7 @@
 
     <div class="credits" onclick="togglePopup()">Show Credits</div>
 
-    <!--JAVASCRIPT-->
-    <script src="script.js"></script>
+<script src="script.js" type="text/javascript"></script>
 </body>
 
 </html>
