@@ -1,0 +1,278 @@
+/*variables*/
+:root {
+    --rosaFuerte: #b8071f;
+    --rosaOscuro: #e65f75;
+    --rosaMedio: #fa8d9f;
+    --rosaPalido: #fff5f5;
+    --oldPink: #f8b7c2;
+  }
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body{
+    background: linear-gradient(rgba(202, 19, 74, 0.514), rgba(202, 19, 74, 0.185)), url(resources/32947080_detailed_hand_painted_pink_watercolour_background_0509.jpg);
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Milonga', cursive;
+}
+.container{
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+    justify-content:center;
+    align-items: center; 
+}
+
+.itemTree {
+    margin:0;
+    padding: 0;
+    width: 280px;
+    height: 120px;
+    background: url(resources/animationBefore.png);
+    background-size: contain;
+    margin-bottom: -5px;
+   
+    
+}
+.itemTree:hover{
+    background: url(resources/animationTree.png);
+    background-size: contain;    
+}
+
+/* ÁREA DE LA CALCULADORA*/
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 0;
+    gap:8px;
+    width: 280px;
+    border-radius: 20px;
+    background-color: var(--rosaPalido);
+    box-shadow: 0px 10px 10px 8px #e75069;;
+}
+
+/*ITEMS*/
+.grid-item {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--oldPink);
+    color:var(--rosaPalido);
+    justify-self: center;
+    box-shadow: 1px 2px 3px var(--rosaOscuro);
+}
+
+.grid-item:hover{
+    background-color: var(--rosaMedio);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* .ac{
+    grid-column: 1 / 3;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+} */
+
+
+/*FLOR*/
+.itemSakura{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    transform: rotate(-22deg);
+}
+.sakura:hover{
+    transform: rotate(-150deg);
+    transition: 1s;
+}
+.sakura{
+    width: 80px;
+    margin-left: -30px;
+    margin-bottom: -10px;
+}
+
+/*RAMA*/
+.itemBranch {
+    display: flex;
+    justify-self: end;
+    padding: 0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    width: 80px;
+    height: 85px;
+    transform:  scaleX(-1);
+    margin-right: -10px;
+    background: url(resources/branch4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.itemBranch:hover{
+    background: url(resources/branch2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 1s;
+}
+
+/*PANTALLA DE LA CALCULADORA*/
+.pantallas{
+    height: 100px;
+    width: 280px;
+    color: var(--rosaFuerte);
+    background-color: var(--rosaPalido);
+    box-shadow: 0px 8px 8px 5px #e75069;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding:5px 10px;
+    display: grid;
+    align-content: center;
+}
+.pantalla1, .pantalla2, .anterior {
+    max-width: 280px;
+    overflow:auto;
+    overflow-y:hidden;
+}
+.pantalla1{
+    font-size: 1rem;
+    color: var(--rosaOscuro);
+}
+.anterior{
+    font-size: 0.9rem;
+    color: var(--rosaOscuro); 
+    display: flex;
+    justify-self: end;
+    height: 15px;
+}
+.temp-result{
+    font-size: 0.9rem;
+    color: var(--rosaOscuro); 
+    padding-right: 15px;
+    margin: 0;
+}
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+/*habilita la apariencia que nosotros editamos, en vez de la autoática y aburrida gris*/
+.pantalla1::-webkit-scrollbar, .pantalla2::-webkit-scrollbar{
+    -webkit-appearance: none;}
+
+/*altura de la scroll bar*/
+.pantalla1::-webkit-scrollbar:horizontal, .pantalla2::-webkit-scrollbar:horizontal{
+    height: 8px;}
+/*estilos de la barra*/
+.pantalla1::-webkit-scrollbar-thumb, .pantalla2::-webkit-scrollbar-thumb{
+    background-color: var(--rosaOscuro);
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+
+.div-rights{
+    color:var(--rosaPalido);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    margin-bottom: -100px;
+    padding: 10px;
+}
+
+.rights, .credits{
+    text-decoration: none;
+    color: var(--rosaPalido);
+}
+.rights:hover, .credits:hover, .img-rights:hover{
+   cursor:pointer;
+}
+
+.img-rights{
+    height: 25px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.credits{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 5px 20px;
+    font-size: 1rem;
+    border: none;
+}
+
+.popup .overlay {
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+    z-index: 1;
+    display:none;
+}
+
+.popup .content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: var(--rosaPalido);
+    width: 450px;
+    height: 300px;
+    z-index:2;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.popup .close-btn{
+    cursor:pointer;
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    background: var(--rosaMedio);
+    color:var(--rosaPalido);
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+    margin:auto;
+}
+
+.popup.active .overlay{
+    display:block;
+}
+
+.popup.active .content{
+    transition: all 300ms ease-in-out;
+    transform:translate(-50%, -50%) scale(1);
+}
+
+.title-credits{
+    padding-bottom: 10px;
+}
