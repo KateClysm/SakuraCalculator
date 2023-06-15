@@ -4,7 +4,7 @@
 <h3>This is a simple calculator proyect made with HTML5, CSS3 and JS. It is inspired by the pretty sakura flowers.</h3>
 
 
-In Action - En acción: 
+In Action: 
 
 
 https://sakuracalculatorbykate.web.app/
@@ -13,7 +13,7 @@ https://sakuracalculatorbykate.web.app/
 ¡Don't forget to interact with the tree and the flower!
 
 
-First Release :
+First Release:
 
 
 ![PrimerLanzamiento](https://github.com/KateClysm/SakuraCalculator/assets/109751647/fd195a1f-5e6d-4196-a78e-306a4d2e3243)
@@ -23,7 +23,7 @@ First Release :
 
 
 
-Initial Design
+Initial Design:
 
 
 ![initialDesign](https://github.com/KateClysm/SakuraCalculator/assets/109751647/4c77f5cb-6f24-4d2a-8846-736c308e5f6f)
