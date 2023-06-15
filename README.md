@@ -9,6 +9,9 @@ Este es un simple proyecto de calculadora hecho con HTML5, CSS3 y JS. Está insp
 In Action - En acción: 
 
 
+¡Don't forget to interact with the tree and the flower!
+
+
 ¡No te olvides de interactuar con el árbol y la flor!
 
 
