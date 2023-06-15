@@ -136,3 +136,8 @@ function clickOperation(key) {
 function clickEqual() { //activa el evento equal
   equalEl.click();
 }
+
+//POPUP
+function togglePopup(){
+  document.getElementById("popup-1").classList.toggle("active");
+}
