@@ -23,7 +23,7 @@ First Release:
 
 
 
-Initial Design:
+Initial Design made in Figma:
 
 
 ![initialDesign](https://github.com/KateClysm/SakuraCalculator/assets/109751647/4c77f5cb-6f24-4d2a-8846-736c308e5f6f)
@@ -59,7 +59,7 @@ Primer Lanzamiento:
 
 
 
-Diseño Inicial:
+Diseño Inicial hecho en Figma:
 
 
 ![initialDesign](https://github.com/KateClysm/SakuraCalculator/assets/109751647/4c77f5cb-6f24-4d2a-8846-736c308e5f6f)
