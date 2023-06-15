@@ -21,7 +21,23 @@ First Release - Primer Lanzamiento:
 
 
 
+
+
+
 Initial Design - Diseño Inicial:
 
 
 ![initialDesign](https://github.com/KateClysm/SakuraCalculator/assets/109751647/4c77f5cb-6f24-4d2a-8846-736c308e5f6f)
+
+
+
+
+
+
+¿Do you want to build something similar? This is the tutorial i followed:
+
+
+¿Quieres crear algo similar? Este es el tutorial que seguí:
+
+
+https://www.youtube.com/watch?v=0Vg4EiYPCUc&feature=youtu.be&ab_channel=WEBCIFAR
