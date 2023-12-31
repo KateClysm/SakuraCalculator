@@ -21,6 +21,7 @@ body{
     height: 100vh;
     font-family: 'Milonga', cursive;
     position: relative;
+    overflow-y: hidden;
 
     background-size:cover;
     -webkit-animation: slidein 100s;

@@ -141,3 +141,10 @@ function clickEqual() { //activa el evento equal
 function togglePopup(){
   document.getElementById("popup-1").classList.toggle("active");
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.body.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+  }, { passive: false });
+});
